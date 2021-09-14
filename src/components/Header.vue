@@ -66,14 +66,6 @@
                         </span>
                     </a>
                 </li>
-                <!-- <li class="headerList__item" id="resources">
-                    <a class="headerList__link" href="#">
-                        resources
-                        <span class="headerList__link-svg">
-                            <font-awesome-icon :icon="myIcon" />
-                        </span>
-                    </a>
-                </li> -->
             </ul>
         </nav>
         <nav class="header-navContact">
