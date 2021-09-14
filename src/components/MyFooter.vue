@@ -66,6 +66,12 @@
     }
   }
 }
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .myFooter__item {
+    width: 2rem;
+    height: 2rem;
+  }
+}
 </style>
 
 <script>

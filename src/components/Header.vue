@@ -460,10 +460,21 @@
     }
 }
 
-@media only screen and (min-width: 640px) and (max-width: 1023px) {
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
     .header__logo {
         margin-left: 0;
         width: 8rem;
+    }
+    .contactUs {
+        &__text {
+            margin-right: 2rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+    .headerList {
+        width: 100vw;
     }
 }
 </style>

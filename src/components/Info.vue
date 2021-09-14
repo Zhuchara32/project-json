@@ -1,297 +1,278 @@
 <template>
-    <section class="info">
-      <nav class="info-heading">
-        <ul class="info-list" id="ex">
-          <li v-on:click="chengeColor()" id="pi" class="info-list__items">
-            <a class="info-list__link" href="#1">
-              flexe same-day delivey
-            </a>
-          </li>
-          <li class="info-list__items">
-            <a class="info-list__link" href="#2">
-              flexe fulfillment
-            </a>
-          </li>
-          <li class="info-list__items">
-            <a class="info-list__link" href="#3">
-              flexe distribution
-            </a>
-          </li>
-          <li class="info-list__items">
-            <a class="info-list__link" href="#4">
-              flexe capacity
-            </a>
-          </li>
-        </ul>
-      </nav>
-        <section class="info-content">
-          <VueSlickCarousel class="info-carousel" :arrows='false' :dots='true'>
-            <div id="1" class="info-contentList__items items">
-              <article class="items-sameDay items-block">
-                <div class="items-block__app">
-                  <p class="items-block__subHeading">
-                    Flexe Logistics programs
-                  </p>
-                  <h2 class="items-block__heading">
-                    same-day. delivered.
-                  </h2>
-                  <p class="items-block__paragraph">
-                    Customers expect fast, free delivery. Add fulfillment
-                    centers in major demand centers and exceed those
-                    expectations, today. Stand out from competirors and
-                    increase revenue with Flexe Same-Day Delivery.
-                  </p>
-                  <button class="items-block__button">
-                    flexe same-day delivery
-                  </button>
-                </div>
-              </article>
-              <article class="items-article items-block">
-                <div class="items-block__app">
-                  <p class="items-block__subHeading">
-                    Aticles
-                  </p>
-                  <h2 class="items-block__heading">
-                    same-day delivery: 3 reasons why speed matters
-                  </h2>
-                  <div class="items-block__linkApp">
-                    <a href="#" class="items-block__link">
-                      read aricles
-                    </a>
-                  </div>
-                </div>
-              </article>
-              <section class="items-amazon items-block">
-                <div class="items-block__app">
-                  <div class="items-block__appAmazon">
-                    <p class="items-block__percent">
-                      58%
-                    </p>
-                    <p class="items-block__text">
-                      of Amazon Prime shoppers purchase more as a
-                      result of Amazon same-day delivery
-                    </p>
-                  </div>
-                  <time class="items-block__time">
-                    Flexe Omnichannel Consumer Survey, 2020
-                  </time>
-                </div>
-              </section>
-              <section class="items-shipping items-block">
-                <div class="items-block__app">
-                  <p class="items-block__percent">
-                    85%
-                  </p>
-                  <p class="items-block__text">
-                    of consumers say they search elsewhere for faster shipping options
-                  </p>
-                  <time class="items-block__time">
-                    Flexe OMnichannel Consumer Survey, 2020
-                  </time>
-                </div>
-              </section>
+  <TabsComp>
+    <TabComp
+    name='flexe same-day delivey' selected='true'>
+      <div class="info-contentList__items items">
+        <article class="items-sameDay items-block">
+          <div class="items-block__app">
+            <p class="items-block__subHeading">
+              Flexe Logistics programs
+            </p>
+            <h2 class="items-block__heading">
+              same-day. delivered.
+            </h2>
+            <p class="items-block__paragraph">
+              Customers expect fast, free delivery. Add fulfillment
+              centers in major demand centers and exceed those
+              expectations, today. Stand out from competirors and
+              increase revenue with Flexe Same-Day Delivery.
+            </p>
+            <button class="items-block__button">
+              flexe same-day delivery
+            </button>
+          </div>
+        </article>
+        <article class="items-article items-block">
+          <div class="items-block__app">
+            <p class="items-block__subHeading">
+              Aticles
+            </p>
+            <h2 class="items-block__heading">
+              same-day delivery: 3 reasons why speed matters
+            </h2>
+            <div class="items-block__linkApp">
+              <a href="#" class="items-block__link">
+                read aricles
+              </a>
             </div>
-            <div id="2" class="info-contentList__items items">
-              <article class="items-sameDay items-block">
-                <div class="items-block__app">
-                  <p class="items-block__subHeading">
-                    Flexe Logistics programs
-                  </p>
-                  <h2 class="items-block__heading">
-                    <span>e</span>commerce. fulfilled.
-                  </h2>
-                  <p class="items-block__paragraph">
-                    Competitive delivery promises get noticed. Expand fulfillment
-                    networks and position goods closer to consumers.
-                    Increase sales, reduce transportation costs, and delight
-                    customers with superior delivery promises from Flexe Fulfillment.
-                  </p>
-                  <button class="items-block__button">
-                    flexe fulfillment
-                  </button>
-                </div>
-              </article>
-              <article class="items-article items-block">
-                <div class="items-block__app">
-                  <p class="items-block__subHeading">
-                    Aticles
-                  </p>
-                  <h2 class="items-block__heading">
-                    Reailers vs. Consumers: Colling Points of View on eCommerce Delivery
-                  </h2>
-                  <div class="items-block__linkApp">
-                    <a href="#" class="items-block__link">
-                      read aricles
-                    </a>
-                  </div>
-                </div>
-              </article>
-              <section class="items-amazon items-block">
-                <div class="items-block__app">
-                  <div class="items-block__appAmazon">
-                    <p class="items-block__percent">
-                      10
-                    </p>
-                    <p class="items-block__text">
-                      years of eCommerce sales frowth in just 10 weeks
-                    </p>
-                  </div>
-                  <time class="items-block__time">
-                    Flexe Omnichannel Consumer Survey, 2020
-                  </time>
-                </div>
-              </section>
-              <section class="items-shipping items-block">
-                <div class="items-block__app">
-                  <p class="items-block__percent">
-                    51%
-                  </p>
-                  <p class="items-block__text">
-                    transportation cost savings with more flexible fulfillment locations
-                  </p>
-                  <time class="items-block__time">
-                    Lull Case Study
-                  </time>
-                </div>
-              </section>
+          </div>
+        </article>
+        <section class="items-amazon items-block">
+          <div class="items-block__app">
+            <div class="items-block__appAmazon">
+              <p class="items-block__percent">
+                58%
+              </p>
+              <p class="items-block__text">
+                of Amazon Prime shoppers purchase more as a
+                result of Amazon same-day delivery
+              </p>
             </div>
-            <div id="3" class="info-contentList__items items">
-              <article class="items-sameDay items-block">
-                <div class="items-block__app">
-                  <p class="items-block__subHeading">
-                    Flexe Logistics programs
-                  </p>
-                  <h2 class="items-block__heading">
-                    B2B distribution/ Simplified.
-                  </h2>
-                  <p class="items-block__paragraph">
-                    Stock outs mean lost sales. Position inventory
-                    closer to retail locations and partner intake
-                    centers. Replenish goods faster, maintain OTIF
-                    compliance, and be more efficient with Flexe
-                    Distribution.
-                  </p>
-                  <button class="items-block__button">
-                    flexe distribution
-                  </button>
-                </div>
-              </article>
-              <article class="items-article items-block">
-                <div class="items-block__app">
-                  <p class="items-block__subHeading">
-                    White Papers
-                  </p>
-                  <h2 class="items-block__heading">
-                    Hindsight Is 2020: A Retrospect of Key Trends in 2020
-                  </h2>
-                  <div class="items-block__linkApp">
-                    <a href="#" class="items-block__link">
-                      read white papers
-                    </a>
-                  </div>
-                </div>
-              </article>
-              <section class="items-amazon items-block">
-                <!-- <div class="items-block__app">
-                  <div class="items-block__appAmazon">
-                    <p class="items-block__percent">
-                      58%
-                    </p>
-                    <p class="items-block__text">
-                      of Amazon Prime shoppers purchase more as a
-                      result of Amazon same-day delivery
-                    </p>
-                  </div>
-                  <time class="items-block__time">
-                    Flexe Omnichannel Consumer Survey, 2020
-                  </time>
-                </div> -->
-              </section>
-              <section class="items-shipping items-block">
-                <div class="items-block__app">
-                  <p class="items-block__percent">
-                    96%
-                  </p>
-                  <p class="items-block__text">
-                    increase in curbside pick-up since March of 2020
-                  </p>
-                  <time class="items-block__time">
-                    Flexe OMnichannel Consumer Survey, 2020
-                  </time>
-                </div>
-              </section>
-            </div>
-            <div id="4" class="info-contentList__items items">
-              <article class="items-sameDay items-block">
-                <div class="items-block__app">
-                  <p class="items-block__subHeading">
-                    Flexe Logistics programs
-                  </p>
-                  <h2 class="items-block__heading">
-                    Add capacity. Fast.
-                  </h2>
-                  <p class="items-block__paragraph">
-                    Disruptions are increasing. Solve
-                    capacity constraints quickly, reduce
-                    costs, and improve network efficiency.
-                    All without fixed-term commitments.
-                    Tap into the largest open warehouse network
-                    with Flexe Capacity.
-                  </p>
-                  <button class="items-block__button">
-                    flexe capacity
-                  </button>
-                </div>
-              </article>
-              <article class="items-article items-block">
-                <div class="items-block__app">
-                  <p class="items-block__subHeading">
-                    Aticles
-                  </p>
-                  <h2 class="items-block__heading">
-                    On-Demand Warehousing 101: Network
-                    Optimization and On-Demand Warehousing
-                  </h2>
-                  <div class="items-block__linkApp">
-                    <a href="#" class="items-block__link">
-                      read aricles
-                    </a>
-                  </div>
-                </div>
-              </article>
-              <section class="items-amazon items-block">
-                <!-- <div class="items-block__app">
-                  <div class="items-block__appAmazon">
-                    <p class="items-block__percent">
-                      58%
-                    </p>
-                    <p class="items-block__text">
-                      of Amazon Prime shoppers purchase more as a
-                      result of Amazon same-day delivery
-                    </p>
-                  </div>
-                  <time class="items-block__time">
-                    Flexe Omnichannel Consumer Survey, 2020
-                  </time>
-                </div> -->
-              </section>
-              <section class="items-shipping items-block">
-                <div class="items-block__app">
-                  <p class="items-block__percent">
-                    50%
-                  </p>
-                  <p class="items-block__text">
-                    YoY frowht in Flexe Logistics Network since 2020
-                  </p>
-                  <time class="items-block__time">
-                    Flexe OMnichannel Consumer Survey, 2020
-                  </time>
-                </div>
-              </section>
-            </div>
-          </VueSlickCarousel>
+            <time class="items-block__time">
+              Flexe Omnichannel Consumer Survey, 2020
+            </time>
+          </div>
         </section>
-    </section>
+        <section class="items-shipping items-block">
+          <div class="items-block__app">
+            <p class="items-block__percent">
+              85%
+            </p>
+            <p class="items-block__text">
+              of consumers say they search elsewhere for faster shipping options
+            </p>
+            <time class="items-block__time">
+              Flexe OMnichannel Consumer Survey, 2020
+            </time>
+          </div>
+        </section>
+      </div>
+    </TabComp>
+    <TabComp name='flexe fulfillment'>
+      <div id="2" class="info-contentList__items items">
+        <article class="items-sameDay items-block">
+          <div class="items-block__app">
+            <p class="items-block__subHeading">
+              Flexe Logistics programs
+            </p>
+            <h2 class="items-block__heading">
+              <span>e</span>commerce. fulfilled.
+            </h2>
+            <p class="items-block__paragraph">
+              Competitive delivery promises get noticed. Expand fulfillment
+              networks and position goods closer to consumers.
+              Increase sales, reduce transportation costs, and delight
+              customers with superior delivery promises from Flexe Fulfillment.
+            </p>
+            <button class="items-block__button">
+              flexe fulfillment
+            </button>
+          </div>
+        </article>
+        <article class="items-article items-block">
+          <div class="items-block__app">
+            <p class="items-block__subHeading">
+              Aticles
+            </p>
+            <h2 class="items-block__heading">
+              Reailers vs. Consumers: Colling Points of View on eCommerce Delivery
+            </h2>
+            <div class="items-block__linkApp">
+              <a href="#" class="items-block__link">
+                read aricles
+              </a>
+            </div>
+          </div>
+        </article>
+        <section class="items-amazon items-block">
+          <div class="items-block__app">
+            <div class="items-block__appAmazon">
+              <p class="items-block__percent">
+                10
+              </p>
+              <p class="items-block__text">
+                years of eCommerce sales frowth in just 10 weeks
+              </p>
+            </div>
+            <time class="items-block__time">
+              Flexe Omnichannel Consumer Survey, 2020
+            </time>
+          </div>
+        </section>
+        <section class="items-shipping items-block">
+          <div class="items-block__app">
+            <p class="items-block__percent">
+              51%
+            </p>
+            <p class="items-block__text">
+              transportation cost savings with more flexible fulfillment locations
+            </p>
+            <time class="items-block__time">
+              Lull Case Study
+            </time>
+          </div>
+        </section>
+      </div>
+    </TabComp>
+    <TabComp name='flexe distribution'>
+      <div id="3" class="info-contentList__items items">
+        <article class="items-sameDay items-block">
+          <div class="items-block__app">
+            <p class="items-block__subHeading">
+              Flexe Logistics programs
+            </p>
+            <h2 class="items-block__heading">
+              B2B distribution/ Simplified.
+            </h2>
+            <p class="items-block__paragraph">
+              Stock outs mean lost sales. Position inventory
+              closer to retail locations and partner intake
+              centers. Replenish goods faster, maintain OTIF
+              compliance, and be more efficient with Flexe
+              Distribution.
+            </p>
+            <button class="items-block__button">
+              flexe distribution
+            </button>
+          </div>
+        </article>
+        <article class="items-article items-block">
+          <div class="items-block__app">
+            <p class="items-block__subHeading">
+              White Papers
+            </p>
+            <h2 class="items-block__heading">
+              Hindsight Is 2020: A Retrospect of Key Trends in 2020
+            </h2>
+            <div class="items-block__linkApp">
+              <a href="#" class="items-block__link">
+                read white papers
+              </a>
+            </div>
+          </div>
+        </article>
+        <section class="items-amazon items-block">
+          <div class="items-block__app">
+            <div class="items-block__appAmazon">
+              <p class="items-block__percent">
+                58%
+              </p>
+              <p class="items-block__text">
+                of Amazon Prime shoppers purchase more as a
+                result of Amazon same-day delivery
+              </p>
+            </div>
+            <time class="items-block__time">
+              Flexe Omnichannel Consumer Survey, 2020
+            </time>
+          </div>
+        </section>
+        <section class="items-shipping items-block">
+          <div class="items-block__app">
+            <p class="items-block__percent">
+              96%
+            </p>
+            <p class="items-block__text">
+              increase in curbside pick-up since March of 2020
+            </p>
+            <time class="items-block__time">
+              Flexe OMnichannel Consumer Survey, 2020
+            </time>
+          </div>
+        </section>
+      </div>
+    </TabComp>
+    <TabComp name='flexe capacity'>
+      <div id="4" class="info-contentList__items items">
+        <article class="items-sameDay items-block">
+          <div class="items-block__app">
+            <p class="items-block__subHeading">
+              Flexe Logistics programs
+            </p>
+            <h2 class="items-block__heading">
+              Add capacity. Fast.
+            </h2>
+            <p class="items-block__paragraph">
+              Disruptions are increasing. Solve
+              capacity constraints quickly, reduce
+              costs, and improve network efficiency.
+              All without fixed-term commitments.
+              Tap into the largest open warehouse network
+              with Flexe Capacity.
+            </p>
+            <button class="items-block__button">
+              flexe capacity
+            </button>
+          </div>
+        </article>
+        <article class="items-article items-block">
+          <div class="items-block__app">
+            <p class="items-block__subHeading">
+              Aticles
+            </p>
+            <h2 class="items-block__heading">
+              On-Demand Warehousing 101: Network
+              Optimization and On-Demand Warehousing
+            </h2>
+            <div class="items-block__linkApp">
+              <a href="#" class="items-block__link">
+                read aricles
+              </a>
+            </div>
+          </div>
+        </article>
+        <section class="items-amazon items-block">
+          <div class="items-block__app">
+            <div class="items-block__appAmazon">
+              <p class="items-block__percent">
+                58%
+              </p>
+              <p class="items-block__text">
+                of Amazon Prime shoppers purchase more as a
+                result of Amazon same-day delivery
+              </p>
+            </div>
+            <time class="items-block__time">
+              Flexe Omnichannel Consumer Survey, 2020
+            </time>
+          </div>
+        </section>
+        <section class="items-shipping items-block">
+          <div class="items-block__app">
+            <p class="items-block__percent">
+              50%
+            </p>
+            <p class="items-block__text">
+              YoY frowht in Flexe Logistics Network since 2020
+            </p>
+            <time class="items-block__time">
+              Flexe OMnichannel Consumer Survey, 2020
+            </time>
+          </div>
+        </section>
+      </div>
+    </TabComp>
+  </TabsComp>
 </template>
 
 <style lang="scss">
@@ -307,19 +288,8 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    border-bottom: solid 2px #595f69;
     line-height: 2;
-    &__items {
-      text-transform: capitalize;
-    }
-
-    &__link {
-      text-decoration: none;
-      color: #595f69;
-      &:active {
-        color: #ffffff;
-      }
-    }
+    cursor: pointer;
   }
 }
 .items {
@@ -393,13 +363,16 @@
   }
 }
 
-.slick-dots {
-  top: -5rem;
+.is-active {
+  color: #16C0B0;
+  font-size: 1.1em;
+  border-bottom: #ffffff 2px solid;
+  color: #ffffff;
 }
-.slick-dots li {
-  margin: 0 4rem;
-  opacity: 0;
-  width: 8rem;
+
+li div {
+  text-transform: capitalize;
+  border-bottom: solid 2px #595f69;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 640px) {
@@ -410,28 +383,21 @@
 </style>
 
 <script>
-import VueSlickCarousel from 'vue-slick-carousel';
-import 'vue-slick-carousel/dist/vue-slick-carousel.css';
-import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css';
+import TabComp from './TabComp.vue';
+import TabsComp from './TabsComp.vue';
 
 export default {
   name: 'Info',
-  components: { VueSlickCarousel },
-  // data() {
-  //   return {
-  //     color: '#595f69',
-  //   };
-  // },
-  // methods: {
-  //   chengeColor() {
-  //     const colorC = document.getElementById('pi');
-  //     this.color = colorC.style.color;
-  //     if (this.color === '#595f69') {
-  //       this.color = '#ffffff';
-  //     } else {
-  //       this.color = '#595f69';
-  //     }
-  //   },
-  // },
+  components: {
+    TabComp,
+    TabsComp,
+  },
+  data() {
+    return {
+      tabs: ['flexe same-day delivey', 'flexe fulfillment',
+        'flexe distribution', 'flexe capacity'],
+      selected: 'flexe same-day delivey',
+    };
+  },
 };
 </script>
